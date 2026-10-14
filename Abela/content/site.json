@@ -1,0 +1,131 @@
+{
+  "site": {
+    "title": "Abela Sailing",
+    "tagline": "Livet underveis.",
+    "intro": "Vi har byttet møterom, kalender og hverdag med båt, hav og steder vi ikke kjenner. Dette er vår reise.",
+    "hero_image": "/uploads/solnedgang-illustrasjon.webp",
+    "hero_alt": "Illustrasjon av solnedgang over sjøen, sett fra dekket på en seilbåt.",
+    "location": "Langs norskekysten",
+    "updated": "",
+    "next_stop": "Neste stopp: nye horisonter",
+    "about": "Vi er Nina og Thomas. Her deler vi seilasen, hverdagen og de små øyeblikkene som gjør reisen vår.",
+    "boat": "Her kommer informasjon om båten.",
+    "about_image": "/uploads/abela-forside.webp",
+    "hero_caption": "AI-generert stemningsbilde · eget bilde av Abela nedenfor",
+    "about_image_caption": "Foto: Wolfgang Berthel / MarineTraffic",
+    "demo_content": true,
+    "route_example": true
+  },
+  "posts": [
+    {
+      "id": "naar-havet-blir-hverdagen",
+      "title": "Når havet blir hverdagen",
+      "date": "",
+      "place": "",
+      "summary": "Vi våkner til stille vann og kaffe i cockpit. I dag lar vi vinden bestemme tempoet. Det er nettopp slike øyeblikk vi håpet å finne.",
+      "body": "I denne eksempelteksten våkner vi til en stille ankringsplass og en morgen uten kalender. Kaffekoppene finner veien ut i cockpit, og det eneste som haster er å se lyset over fjellene.\n\nVi bruker tid på å sjekke været, se over båten og finne ut hvor vi har lyst til å dra videre. Noen dager handler reisen om avstanden vi seiler. Andre dager handler den om å bli liggende litt til.\n\nDenne historien og bildene er laget som en demonstrasjon av bloggen. De beskriver ikke en faktisk etappe.",
+      "example": true,
+      "published": true,
+      "featured_order": 3,
+      "images": [
+        {
+          "image": "/uploads/eksempel-kyst.webp",
+          "alt": "Illustrerende bilde av en seilbåt ved en nordlig kyst",
+          "caption": "En havn for natten · AI-generert eksempelbilde"
+        }
+      ]
+    },
+    {
+      "id": "morgenkaffe-i-cockpit",
+      "title": "Morgenkaffe i cockpit",
+      "date": "",
+      "place": "",
+      "summary": "En rolig start, to kaffekopper og utsikt som skifter fra dag til dag.",
+      "body": "Dette er et eksempel på et kort reisebrev fra hverdagen om bord.\n\nDet er stille på sjøen. Før vi gjør noe annet, setter vi oss ned med hver vår kopp kaffe. Vi ser på været og snakker om dagens planer.\n\nHer kan vi senere dele en ekte historie fra turen, med våre egne bilder og opplevelser.",
+      "example": true,
+      "published": true,
+      "featured_order": 1,
+      "images": [
+        {
+          "image": "/uploads/eksempel-kaffe.webp",
+          "alt": "Illustrerende bilde av kaffekopper om bord",
+          "caption": "Morgenkaffe i cockpit · AI-generert eksempelbilde"
+        }
+      ]
+    },
+    {
+      "id": "et-moete-langs-kysten",
+      "title": "Et møte langs kysten",
+      "date": "",
+      "place": "",
+      "summary": "Noen av de fineste øyeblikkene er de vi ikke har planlagt.",
+      "body": "Dette eksempelinnlegget viser hvordan vi kan dele små møter med naturen underveis.\n\nEt bilde, noen linjer om opplevelsen og et lite minne vi vil ta vare på. Det trenger ikke være en lang historie for å være verdt å dele.\n\nLundefuglen på bildet er en illustrasjon, ikke et dokumentert møte fra vår reise.",
+      "example": true,
+      "published": true,
+      "featured_order": 2,
+      "images": [
+        {
+          "image": "/uploads/eksempel-lundefugl.webp",
+          "alt": "AI-generert illustrasjon av lundefugl på en kystklippe",
+          "caption": "Et møte langs kysten · AI-generert eksempelbilde"
+        }
+      ]
+    },
+    {
+      "id": "med-vinden-videre",
+      "title": "Med vinden videre",
+      "date": "",
+      "place": "",
+      "summary": "Åpent hav, en ny horisont og tid til å finne vår egen rytme.",
+      "body": "Denne teksten viser hvordan et reisebrev fra en seilingsdag kan se ut.\n\nVi lar båten finne rytmen i bølgene. Små justeringer av seilene, en kopp te og et blikk mot horisonten. Det er plass til både stillhet og gode samtaler.\n\nNår reisen er i gang, erstatter vi eksempelteksten med våre egne erfaringer.",
+      "example": true,
+      "published": true,
+      "featured_order": 4,
+      "images": [
+        {
+          "image": "/uploads/solnedgang-illustrasjon.webp",
+          "alt": "AI-generert illustrasjon av seilbåtdekk ved solnedgang",
+          "caption": "Med vinden videre · AI-generert eksempelbilde"
+        }
+      ]
+    }
+  ],
+  "stops": [
+    {
+      "name": "Bergen",
+      "lat": 60.3913,
+      "lng": 5.3221,
+      "status": "visited",
+      "date": "",
+      "note": "Eksempelstopp – ikke en faktisk posisjon eller bekreftet reiseplan.",
+      "post_id": ""
+    },
+    {
+      "name": "Ålesund",
+      "lat": 62.4722,
+      "lng": 6.1495,
+      "status": "visited",
+      "date": "",
+      "note": "Eksempelstopp – ikke en faktisk posisjon eller bekreftet reiseplan.",
+      "post_id": ""
+    },
+    {
+      "name": "Bodø",
+      "lat": 67.2804,
+      "lng": 14.4049,
+      "status": "visited",
+      "date": "",
+      "note": "Eksempelstopp – ikke en faktisk posisjon eller bekreftet reiseplan.",
+      "post_id": ""
+    },
+    {
+      "name": "Tromsø",
+      "lat": 69.6492,
+      "lng": 18.9553,
+      "status": "planned",
+      "date": "",
+      "note": "Eksempelstopp – ikke en faktisk posisjon eller bekreftet reiseplan.",
+      "post_id": ""
+    }
+  ]
+}

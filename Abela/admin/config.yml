@@ -1,0 +1,71 @@
+# Innlogging må kobles til før editor.html kan brukes. Se README.md.
+backend:
+  name: github
+  repo: thomashavnegjerde-glitch/Abela-Sailing
+  branch: main
+  # Sett base_url og auth_endpoint til valgt, kontrollert OAuth-tjeneste.
+locale: nb
+media_folder: uploads
+public_folder: /uploads
+collections:
+  - name: reisedagbok
+    label: Abela Sailing
+    files:
+      - name: innhold
+        label: Innlegg, rute og sider
+        file: content/site.json
+        format: json
+        fields:
+          - name: site
+            label: Forside og om oss
+            widget: object
+            fields:
+              - {name: demo_content, label: Vis merking for eksempelinnhold, widget: boolean, default: true}
+              - {name: route_example, label: Ruten er et eksempel, widget: boolean, default: true}
+              - {name: title, label: Navn, widget: string}
+              - {name: tagline, label: Overskrift, widget: string}
+              - {name: intro, label: Introduksjon, widget: text}
+              - {name: hero_image, label: Forsidebilde, widget: image, required: false}
+              - {name: hero_alt, label: Beskriv forsidebildet, widget: string, required: false}
+              - {name: hero_caption, label: Bildetekst og fotograf, widget: string, required: false}
+              - {name: location, label: Hvor vi er, widget: string}
+              - {name: updated, label: Oppdatert dato, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', required: false}
+              - {name: next_stop, label: Neste etappe, widget: string}
+              - {name: about, label: Om oss, widget: text}
+              - {name: boat, label: Om båten, widget: text}
+              - {name: about_image_caption, label: Fotograf og bildetekst om båten, widget: string, required: false}
+              - {name: about_image, label: Bilde av oss, widget: image, required: false}
+          - name: posts
+            label: Reiseinnlegg
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - {name: id, label: Unik adresse (små bokstaver og bindestrek), widget: string, pattern: ['^[a-z0-9-]{1,80}$', 'Bruk små bokstaver, tall og bindestrek']}
+              - {name: title, label: Tittel, widget: string}
+              - {name: date, label: Dato, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', required: false}
+              - {name: place, label: Sted, widget: string, required: false}
+              - {name: summary, label: Kort introduksjon, widget: text}
+              - {name: body, label: Historien, widget: text}
+              - {name: example, label: Eksempelinnlegg, widget: boolean, default: false}
+              - {name: published, label: Vis på bloggen, widget: boolean, default: false, hint: 'Av betyr at innlegget er lagret som utkast. I et offentlig GitHub-repository er kildefilen fortsatt synlig.'}
+              - {name: featured_order, label: Rekkefølge på forsiden, widget: number, default: 99, min: 1, required: false}
+              - name: images
+                label: Bilder
+                widget: list
+                required: false
+                fields:
+                  - {name: image, label: Bilde, widget: image}
+                  - {name: alt, label: Beskriv bildet, widget: string}
+                  - {name: caption, label: Bildetekst, widget: string, required: false}
+          - name: stops
+            label: Kartstopp (i rekkefølge langs ruten)
+            widget: list
+            required: false
+            fields:
+              - {name: name, label: Sted, widget: string}
+              - {name: lat, label: Breddegrad, widget: number, value_type: float, min: -90, max: 90}
+              - {name: lng, label: Lengdegrad, widget: number, value_type: float, min: -180, max: 180}
+              - {name: status, label: Status, widget: select, options: [{label: Besøkt, value: visited}, {label: Planlagt, value: planned}]}
+              - {name: date, label: Dato, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', required: false}
+              - {name: note, label: Kort beskrivelse, widget: text, required: false}
+              - {name: post_id, label: Adresse til tilhørende innlegg, widget: string, required: false}

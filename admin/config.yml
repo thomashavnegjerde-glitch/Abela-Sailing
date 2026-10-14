@@ -20,6 +20,8 @@ collections:
             label: Forside og om oss
             widget: object
             fields:
+              - {name: demo_content, label: Vis merking for eksempelinnhold, widget: boolean, default: true}
+              - {name: route_example, label: Ruten er et eksempel, widget: boolean, default: true}
               - {name: title, label: Navn, widget: string}
               - {name: tagline, label: Overskrift, widget: string}
               - {name: intro, label: Introduksjon, widget: text}
@@ -46,6 +48,7 @@ collections:
               - {name: body, label: Historien, widget: text}
               - {name: example, label: Eksempelinnlegg, widget: boolean, default: false}
               - {name: published, label: Vis på bloggen, widget: boolean, default: false, hint: 'Av betyr at innlegget er lagret som utkast. I et offentlig GitHub-repository er kildefilen fortsatt synlig.'}
+              - {name: featured_order, label: Rekkefølge på forsiden, widget: number, default: 99, min: 1, required: false}
               - name: images
                 label: Bilder
                 widget: list

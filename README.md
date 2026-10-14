@@ -71,3 +71,7 @@ python3 -m http.server 8080 --directory dist
 ## Designoppdatering 14. oktober 2026
 
 Fullbredde toppbilde, klassisk typografi, Reisebrev/Kart/Båten/Om oss og redaksjonell forside. Solnedgangsbildet er en tydelig merket AI-illustrasjon, ikke et faktisk bilde fra reisen. Bildet av Abela vises i siste-reisebrev-seksjonen og på båtsiden; fotografens vannmerke er bevart. Kartoversikten viser ingen oppdiktet rute. Bygging, innholdstester og interne lenker er kontrollert. Mobilvisning og produksjonsvisning må kontrolleres i nettleser etter publisering.
+
+## Demo med reisebrev og bilder
+
+Fire eksempelinnlegg, illustrerende AI-bilder og fire eksempelstopp er lagt inn for å vise designets potensial. All reiseinformasjon er merket som eksempel. Dette er ikke faktiske turdata. Erstatt innlegg og rute med egne opplevelser før bloggen brukes som en reiseskildring. Behold eksempelmerking så lenge demoopplysninger finnes. Kommentarer og redigeringsinnlogging er fremdeles ikke aktivert.
