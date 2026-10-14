@@ -1,0 +1,17 @@
+{
+  "name": "abela-sailing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check assets/app.js && node --check scripts/build.mjs",
+    "test": "node --test scripts/build.test.mjs"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
