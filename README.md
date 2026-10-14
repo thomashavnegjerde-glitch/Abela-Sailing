@@ -67,3 +67,7 @@ python3 -m http.server 8080 --directory dist
 ```
 
 Åpne `http://localhost:8080`. CMS-innlogging og CSP i produksjon må testes etter kobling til Vercel.
+
+## Designoppdatering 14. oktober 2026
+
+Fullbredde toppbilde, klassisk typografi, Reisebrev/Kart/Båten/Om oss og redaksjonell forside. Solnedgangsbildet er en tydelig merket AI-illustrasjon, ikke et faktisk bilde fra reisen. Bildet av Abela vises i siste-reisebrev-seksjonen og på båtsiden; fotografens vannmerke er bevart. Kartoversikten viser ingen oppdiktet rute. Bygging, innholdstester og interne lenker er kontrollert. Mobilvisning og produksjonsvisning må kontrolleres i nettleser etter publisering.

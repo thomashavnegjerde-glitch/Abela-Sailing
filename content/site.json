@@ -2,15 +2,17 @@
   "site": {
     "title": "Abela Sailing",
     "tagline": "Livet underveis.",
-    "intro": "Historier og små øyeblikk fra livet om bord. En reisedagbok for familie, venner og deg som har lyst til å følge oss.",
-    "hero_image": "",
-    "hero_alt": "",
+    "intro": "Historier fra livet om bord. Små øyeblikk, nye steder og reisen med Abela.",
+    "hero_image": "/uploads/solnedgang-illustrasjon.webp",
+    "hero_alt": "Illustrasjon av solnedgang over sjøen, sett fra dekket på en seilbåt.",
     "location": "Reisestatus kommer snart",
     "updated": "",
     "next_stop": "Neste etappe er ikke lagt inn",
     "about": "Her kommer en presentasjon av oss, Abela og reisen vi planlegger.",
     "boat": "Her kommer informasjon om båten.",
-    "about_image": ""
+    "about_image": "/uploads/abela-forside.webp",
+    "hero_caption": "AI-generert stemningsbilde · eget bilde av Abela nedenfor",
+    "about_image_caption": "Foto: Wolfgang Berthel / MarineTraffic"
   },
   "posts": [
     {

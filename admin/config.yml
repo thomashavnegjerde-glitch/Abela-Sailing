@@ -25,11 +25,13 @@ collections:
               - {name: intro, label: Introduksjon, widget: text}
               - {name: hero_image, label: Forsidebilde, widget: image, required: false}
               - {name: hero_alt, label: Beskriv forsidebildet, widget: string, required: false}
+              - {name: hero_caption, label: Bildetekst og fotograf, widget: string, required: false}
               - {name: location, label: Hvor vi er, widget: string}
               - {name: updated, label: Oppdatert dato, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', required: false}
               - {name: next_stop, label: Neste etappe, widget: string}
               - {name: about, label: Om oss, widget: text}
               - {name: boat, label: Om båten, widget: text}
+              - {name: about_image_caption, label: Fotograf og bildetekst om båten, widget: string, required: false}
               - {name: about_image, label: Bilde av oss, widget: image, required: false}
           - name: posts
             label: Reiseinnlegg
