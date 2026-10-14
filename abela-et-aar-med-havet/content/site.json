@@ -1,0 +1,31 @@
+{
+  "site": {
+    "title": "Abela Sailing",
+    "tagline": "Livet underveis.",
+    "intro": "Vi har byttet møterom, kalender og hverdag med båt, hav og steder vi ikke kjenner. Dette er vår reise.",
+    "hero_image": "/uploads/solnedgang-illustrasjon.webp",
+    "hero_alt": "Illustrasjon av solnedgang over sjøen, sett fra dekket på en seilbåt.",
+    "location": "Reisestatus kommer snart",
+    "updated": "",
+    "next_stop": "Neste etappe er ikke lagt inn",
+    "about": "Her kommer en presentasjon av oss, Abela og reisen vi planlegger.",
+    "boat": "Her kommer informasjon om båten.",
+    "about_image": "/uploads/abela-forside.webp",
+    "hero_caption": "AI-generert stemningsbilde · eget bilde av Abela nedenfor",
+    "about_image_caption": "Foto: Wolfgang Berthel / MarineTraffic"
+  },
+  "posts": [
+    {
+      "id": "velkommen",
+      "title": "Velkommen om bord",
+      "date": "",
+      "place": "",
+      "summary": "Her vil vi dele historier, bilder og små øyeblikk fra seilasen.",
+      "body": "Dette er et eksempelinnlegg som viser hvordan reisedagboken vil se ut.\n\nNår vi har lagt inn den første historien fra turen, vil du finne den her – med bilder, dato og stedet vi skriver fra.",
+      "example": true,
+      "published": true,
+      "images": []
+    }
+  ],
+  "stops": []
+}

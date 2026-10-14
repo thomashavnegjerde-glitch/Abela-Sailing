@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp, mkdir, writeFile, readFile, cp, readdir, rm} from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import sharp from 'sharp';
+import {validate,build} from './build.mjs';
+const sample=()=>({site:{hero_image:'',about_image:''},posts:[],stops:[]});
+test('avviser doble innlegg-IDer og ugyldige koordinater',()=>{let d=sample();d.posts=[{id:'test',title:'A',body:''},{id:'test',title:'B',body:''}];assert.throws(()=>validate(d),/unik/);d=sample();d.stops=[{lat:91,lng:0,status:'visited'}];assert.throws(()=>validate(d),/koordinater/);});
+test('publiserer bare publiserte innlegg; originaler og metadata holdes utenfor dist',async()=>{const root=await mkdtemp(path.join(os.tmpdir(),'abela-'));try{for(const dir of ['content','uploads'])await mkdir(path.join(root,dir));await cp('admin',path.join(root,'admin'),{recursive:true});await cp('assets',path.join(root,'assets'),{recursive:true});await writeFile(path.join(root,'index.html'),'<h1>Test</h1>');await sharp({create:{width:2200,height:1000,channels:3,background:'#183d4a'}}).jpeg().withMetadata({exif:{IFD0:{Artist:'Private author'}}}).toFile(path.join(root,'uploads/test.jpg'));let d=sample();d.site.hero_image='/uploads/test.jpg';d.posts=[{id:'draft',title:'Private draft',body:'DO_NOT_PUBLISH',published:false,images:[{image:'/uploads/missing.jpg'}]}];await writeFile(path.join(root,'content/site.json'),JSON.stringify(d));await build(root);const json=JSON.parse(await readFile(path.join(root,'dist/content/site.json'),'utf8'));assert.equal(json.posts.length,0);const meta=await sharp(path.join(root,'dist',json.site.hero_image)).metadata();assert.equal(meta.width,1920);assert.equal(meta.exif,undefined);assert.equal((await readdir(path.join(root,'dist'))).includes('uploads'),false);d.site.hero_image='/uploads/../../secret.jpg';await writeFile(path.join(root,'content/site.json'),JSON.stringify(d));await assert.rejects(build(root),/bildesti/);}finally{await rm(root,{recursive:true,force:true});}});
